@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(cmake-example VERSION 0.1.0)
+project(cmake-example VERSION 1.0.0)
+set(CMAKE_CXX_STANDARD 11) # Set the standard
 
 include_directories(include)
 add_library(sqrt SHARED sqrt.cpp)
