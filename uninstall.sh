@@ -6,4 +6,4 @@ echo "Using $current_dir/$manifest_dir"
 echo "Uninstalling files:"
 cat $current_dir/$manifest_dir
 echo
-xargs rm < $current_dir/build/install_manifest.txt
+xargs rm < $current_dir/$manifest_dir
