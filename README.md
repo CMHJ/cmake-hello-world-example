@@ -30,8 +30,23 @@ sudo make install # to install if on Linux or Mac
 sudo ldconfig 
 ```
 
-The `ldconfig` is to update the shared library cache on Linux.
+The `ldconfig` command is to update the shared library cache on Linux.
 Otherwise when running clsqrt it will fail as it can't find the library that was just installed to run it.
+
+# Running
+
+After installing a binary named `clsqrt` will be added to the PATH and a shared library `libsqrt.so` will be installed as well.
+
+Example:
+
+```sh
+clsqrt 49
+
+# Output
+7
+```
+
+If there is an error and you are on Linux, please run `sudo ldconfig` and try again.
 
 # Uninstalling
 
